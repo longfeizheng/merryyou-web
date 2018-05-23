@@ -5,9 +5,13 @@ import 'element-ui/lib/theme-chalk/index.css' //  新添加，避免后期打包
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import axios from 'axios'
+import qs from 'qs'
 
 Vue.use(ElementUI) // 新添加
 Vue.config.productionTip = false
+Vue.prototype.$axios = axios
+Vue.prototype.$qs = qs
 
 /* eslint-disable no-new */
 new Vue({
